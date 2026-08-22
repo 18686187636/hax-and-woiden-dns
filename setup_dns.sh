@@ -180,10 +180,10 @@ elif [ "$1" == "--resolved" ]; then
 fi
 
 # 自动检测主机名（支持部分匹配）
-if [[ "$HOSTNAME" == *woiden* ]]; then
+if [[ "${HOSTNAME,,}" == *woiden* ]]; then
     echo -e "${YELLOW}检测到 woiden 主机，执行静态方案。${NC}"
     configure_static
-elif [[ "$HOSTNAME" == *hax* ]]; then
+elif [[ "${HOSTNAME,,}" == *hax* ]]; then
     echo -e "${YELLOW}检测到 hax 主机，执行 systemd-resolved 方案。${NC}"
     configure_resolved
 else
