@@ -19,7 +19,7 @@
 ### 快速开始（一键执行）
 
 ```bash
-curl -sSL https://github.com/18686187636/hax-and-woiden-dns/blob/main/setup_dns.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/18686187636/hax-and-woiden-dns/main/setup_dns.sh | sudo bash
 ```
 
 
@@ -28,16 +28,16 @@ curl -sSL https://github.com/18686187636/hax-and-woiden-dns/blob/main/setup_dns.
 
 ```bash
 # 强制使用静态锁定方案
-curl -sSL https://github.com/18686187636/hax-and-woiden-dns/blob/main/setup_dns.sh | sudo bash -s -- --static
+curl -sSL https://raw.githubusercontent.com/18686187636/hax-and-woiden-dns/main/setup_dns.sh | sudo bash -s -- --static
 
 # 强制使用 systemd-resolved 方案
-curl -sSL https://github.com/18686187636/hax-and-woiden-dns/blob/main/setup_dns.sh | sudo bash -s -- --resolved
+curl -sSL https://raw.githubusercontent.com/18686187636/hax-and-woiden-dns/main/setup_dns.sh | sudo bash -s -- --resolved
 ```
 
 ### 先下载后执行（推荐用于审查）
 
 ```bash
-curl -sSL -o /tmp/setup_dns.sh https://github.com/18686187636/hax-and-woiden-dns/blob/main/setup_dns.sh
+curl -sSL -o /tmp/setup_dns.sh https://raw.githubusercontent.com/18686187636/hax-and-woiden-dns/main/setup_dns.sh
 chmod +x /tmp/setup_dns.sh
 sudo /tmp/setup_dns.sh
 ```
